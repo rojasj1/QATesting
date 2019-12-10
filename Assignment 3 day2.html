@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <body>
+      <script language = "vbscript" type = "text/vbscript">        
+	Option Explicit
+	
+	dim arr(3)
+	arr(0) = InputBox("Enter 4 numbers : ")
+	arr(1) = InputBox("Enter 4 numbers : ")	
+	arr(2) = InputBox("Enter 4 numbers : ")
+	arr(3) = InputBox("Enter 4 numbers : ")
+	Sub ArraySorting()
+		For i = LBound(arr) to UBound(arr)
+  For j = LBound(arr) to UBound(arr) - 1
+      If arr(j) > arr(j + 1) Then
+         TempValue = arr(j + 1)
+         arr(j + 1) = arr(j)
+         arr(j) = TempValue
+      End If
+  Next
+Next
+	End Sub
+		document.write(arr(0))
+		document.write(arr(1))
+		document.write(arr(2))
+		document.write(arr(3))	
+		 
+      </script>
+   </body>
+</html>
+      </script>
+   </body>
+</html>

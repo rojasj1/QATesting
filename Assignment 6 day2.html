@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   <body>
+      <script language = "vbscript" type = "text/vbscript">  
+	  'fibonacci series of a given number
+	n=cint(inputbox("enter a number"))
+	dim f0,f1,f2
+	f0=0
+	f1=1
+	f2=f0+f1
+
+	var="The fibonacci series of a given number "& n &" is :" & vbnewline
+
+	var=var&" " & f0 &" "& f1
+	do while(f2<=n)
+	var=var& " " &f2
+	f0=f1
+	f1=f2
+	f2=f0+f1
+	loop
+	msgbox var
+	</script>
+  </body>
+</html>
+   	  
